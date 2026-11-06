@@ -14,19 +14,19 @@ router.get('/api/loops/:id', (req, res) => {
     res.send({ data: loop });
 });
 
-router.patch('/api/loops/:id', (req, res) => {
-    res.status(501).send({ errorMessage: 'Not implemented yet' });
-});
-
-router.delete('/api/loops/:id', (req, res) => {
-    res.status(501).send({ errorMessage: 'Not implemented yet' });
-});
-
 router.get('/api/loops/:id/results', (req, res) => {
     res.status(501).send({ errorMessage: 'Not implemented yet' });
 });
 
 router.post('/api/loops/:id/results', (req, res) => {
+    res.status(501).send({ errorMessage: 'Not implemented yet' });
+});
+
+router.patch('/api/loops/:id', (req, res) => {
+    res.status(501).send({ errorMessage: 'Not implemented yet' });
+});
+
+router.delete('/api/loops/:id', (req, res) => {
     res.status(501).send({ errorMessage: 'Not implemented yet' });
 });
 

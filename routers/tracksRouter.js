@@ -33,6 +33,10 @@ router.get('/api/tracks/:id/loops', (req, res) => {
     res.send({ data: trackLoops });
 });
 
+router.get('/api/tracks/:id/audio', (req, res) => {
+    res.status(501).send({ errorMessage: 'Not implemented yet' });
+});
+
 router.post('/api/tracks/:id/loops', (req, res) => {
     const trackId = Number(req.params.id);
     const track = tracks.find((track) => track.id === trackId);
@@ -99,10 +103,6 @@ router.patch('/api/tracks/:id', (req, res) => {
 });
 
 router.delete('/api/tracks/:id', (req, res) => {
-    res.status(501).send({ errorMessage: 'Not implemented yet' });
-});
-
-router.get('/api/tracks/:id/audio', (req, res) => {
     res.status(501).send({ errorMessage: 'Not implemented yet' });
 });
 
